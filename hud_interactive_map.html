@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c0c13082f921c89335f5e19c0002f66 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c0c13082f921c89335f5e19c0002f66" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c0c13082f921c89335f5e19c0002f66 = L.map(
+                "map_6c0c13082f921c89335f5e19c0002f66",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98991fd3dc9d4b6737202cc76b1adb61 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_98991fd3dc9d4b6737202cc76b1adb61.addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+            var circle_marker_e8b97dece476ac4591a5e15da2619c99 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_19b75dc9f2ee41a8da69f097d3441997 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce225c77b4b7b9978efe39bffe91abcd = $(`<div id="html_ce225c77b4b7b9978efe39bffe91abcd" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6037<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>25 Units</span></div></div>`)[0];
+                popup_19b75dc9f2ee41a8da69f097d3441997.setContent(html_ce225c77b4b7b9978efe39bffe91abcd);
+            
+        
+
+        circle_marker_e8b97dece476ac4591a5e15da2619c99.bindPopup(popup_19b75dc9f2ee41a8da69f097d3441997)
+        ;
+
+        
+    
+    
+            circle_marker_e8b97dece476ac4591a5e15da2619c99.bindTooltip(
+                `<div>
+                     FIPS ID 6037: 25 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9786070aa2d6831cc342526f0c18cd7 = L.circleMarker(
+                [36.7783, -119.4179],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_281d5028a5312e8e10eb4d4deba488ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c350985d26a60b7e5f5f89804470b52 = $(`<div id="html_7c350985d26a60b7e5f5f89804470b52" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6019<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>12 Units</span></div></div>`)[0];
+                popup_281d5028a5312e8e10eb4d4deba488ca.setContent(html_7c350985d26a60b7e5f5f89804470b52);
+            
+        
+
+        circle_marker_c9786070aa2d6831cc342526f0c18cd7.bindPopup(popup_281d5028a5312e8e10eb4d4deba488ca)
+        ;
+
+        
+    
+    
+            circle_marker_c9786070aa2d6831cc342526f0c18cd7.bindTooltip(
+                `<div>
+                     FIPS ID 6019: 12 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b580d0f8c2d82250fadf424ec2413f1 = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_a2ba4de18b8b190bf98fe8d22e97d284 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6f8a24dc67bdd6df9994b6dcee788ae = $(`<div id="html_b6f8a24dc67bdd6df9994b6dcee788ae" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6075<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>18 Units</span></div></div>`)[0];
+                popup_a2ba4de18b8b190bf98fe8d22e97d284.setContent(html_b6f8a24dc67bdd6df9994b6dcee788ae);
+            
+        
+
+        circle_marker_9b580d0f8c2d82250fadf424ec2413f1.bindPopup(popup_a2ba4de18b8b190bf98fe8d22e97d284)
+        ;
+
+        
+    
+    
+            circle_marker_9b580d0f8c2d82250fadf424ec2413f1.bindTooltip(
+                `<div>
+                     FIPS ID 6075: 18 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f2293a75b327c799b22a720514e05d4 = L.circleMarker(
+                [38.5816, -121.4944],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_6ef07c9ebf5f7cbd8d8616dda1452372 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_126996b5b79cee9c0cd0b4f8e8cd38d5 = $(`<div id="html_126996b5b79cee9c0cd0b4f8e8cd38d5" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6067<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>22 Units</span></div></div>`)[0];
+                popup_6ef07c9ebf5f7cbd8d8616dda1452372.setContent(html_126996b5b79cee9c0cd0b4f8e8cd38d5);
+            
+        
+
+        circle_marker_7f2293a75b327c799b22a720514e05d4.bindPopup(popup_6ef07c9ebf5f7cbd8d8616dda1452372)
+        ;
+
+        
+    
+    
+            circle_marker_7f2293a75b327c799b22a720514e05d4.bindTooltip(
+                `<div>
+                     FIPS ID 6067: 22 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3132c14f32dba048e598ac9ca47813a = L.circleMarker(
+                [34.4208, -119.6982],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_5c55aa382ee87a1a2b7cbf8d1256b3cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a4f2f4a0d3e557bf81a8c9fe665ec64 = $(`<div id="html_5a4f2f4a0d3e557bf81a8c9fe665ec64" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6083<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>10 Units</span></div></div>`)[0];
+                popup_5c55aa382ee87a1a2b7cbf8d1256b3cc.setContent(html_5a4f2f4a0d3e557bf81a8c9fe665ec64);
+            
+        
+
+        circle_marker_f3132c14f32dba048e598ac9ca47813a.bindPopup(popup_5c55aa382ee87a1a2b7cbf8d1256b3cc)
+        ;
+
+        
+    
+    
+            circle_marker_f3132c14f32dba048e598ac9ca47813a.bindTooltip(
+                `<div>
+                     FIPS ID 6083: 10 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fdb8a868d2dee0aaa1d44fd7d8601a1 = L.circleMarker(
+                [33.7701, -118.1937],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_5f406bf1b86fd26dc20adefef8f06262 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c96fe09aa23ff3806874e24b41de0bb9 = $(`<div id="html_c96fe09aa23ff3806874e24b41de0bb9" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6037<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>30 Units</span></div></div>`)[0];
+                popup_5f406bf1b86fd26dc20adefef8f06262.setContent(html_c96fe09aa23ff3806874e24b41de0bb9);
+            
+        
+
+        circle_marker_0fdb8a868d2dee0aaa1d44fd7d8601a1.bindPopup(popup_5f406bf1b86fd26dc20adefef8f06262)
+        ;
+
+        
+    
+    
+            circle_marker_0fdb8a868d2dee0aaa1d44fd7d8601a1.bindTooltip(
+                `<div>
+                     FIPS ID 6037: 30 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf15ced644c7dda5b792ca896dfa8367 = L.circleMarker(
+                [36.6002, -121.8947],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_6d38f21ba45716c45651f0635bfd4e41 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5e175689eb6f5cbc78eba9e33448077 = $(`<div id="html_c5e175689eb6f5cbc78eba9e33448077" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6053<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>15 Units</span></div></div>`)[0];
+                popup_6d38f21ba45716c45651f0635bfd4e41.setContent(html_c5e175689eb6f5cbc78eba9e33448077);
+            
+        
+
+        circle_marker_bf15ced644c7dda5b792ca896dfa8367.bindPopup(popup_6d38f21ba45716c45651f0635bfd4e41)
+        ;
+
+        
+    
+    
+            circle_marker_bf15ced644c7dda5b792ca896dfa8367.bindTooltip(
+                `<div>
+                     FIPS ID 6053: 15 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3e17254d310bc1a46fae2cf70d2da14 = L.circleMarker(
+                [35.3733, -119.0187],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_066abeb22bdad5006c57946980229826 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c47a60a69e672ffa2125db26d99a5cd = $(`<div id="html_0c47a60a69e672ffa2125db26d99a5cd" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6029<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>9 Units</span></div></div>`)[0];
+                popup_066abeb22bdad5006c57946980229826.setContent(html_0c47a60a69e672ffa2125db26d99a5cd);
+            
+        
+
+        circle_marker_c3e17254d310bc1a46fae2cf70d2da14.bindPopup(popup_066abeb22bdad5006c57946980229826)
+        ;
+
+        
+    
+    
+            circle_marker_c3e17254d310bc1a46fae2cf70d2da14.bindTooltip(
+                `<div>
+                     FIPS ID 6029: 9 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_045ed4879424c1a8c45fb4a307f2936e = L.circleMarker(
+                [38.4404, -122.7141],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_0cf37a7dd8bf4db4b23a3c3d0c3576ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_911daf8796790dfd1bb91f52f376650e = $(`<div id="html_911daf8796790dfd1bb91f52f376650e" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6097<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>0 Units</span></div></div>`)[0];
+                popup_0cf37a7dd8bf4db4b23a3c3d0c3576ae.setContent(html_911daf8796790dfd1bb91f52f376650e);
+            
+        
+
+        circle_marker_045ed4879424c1a8c45fb4a307f2936e.bindPopup(popup_0cf37a7dd8bf4db4b23a3c3d0c3576ae)
+        ;
+
+        
+    
+    
+            circle_marker_045ed4879424c1a8c45fb4a307f2936e.bindTooltip(
+                `<div>
+                     FIPS ID 6097: 0 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f5c3e7c9ab45e01ee413785684e7fdd = L.circleMarker(
+                [34.9592, -116.4194],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_e0e629120e54027eaf61f55dd5e1aefe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b309d3db1190dd7913dc27be8a576739 = $(`<div id="html_b309d3db1190dd7913dc27be8a576739" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6071<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>14 Units</span></div></div>`)[0];
+                popup_e0e629120e54027eaf61f55dd5e1aefe.setContent(html_b309d3db1190dd7913dc27be8a576739);
+            
+        
+
+        circle_marker_6f5c3e7c9ab45e01ee413785684e7fdd.bindPopup(popup_e0e629120e54027eaf61f55dd5e1aefe)
+        ;
+
+        
+    
+    
+            circle_marker_6f5c3e7c9ab45e01ee413785684e7fdd.bindTooltip(
+                `<div>
+                     FIPS ID 6071: 14 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_166a0c1346e0861d1189e27bd3d969e3 = L.circleMarker(
+                [37.3382, -121.8863],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_461e2246227db0e048f8c6ae58c70d64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c106f365eaa185012ac9d3c2252d93ba = $(`<div id="html_c106f365eaa185012ac9d3c2252d93ba" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6085<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>20 Units</span></div></div>`)[0];
+                popup_461e2246227db0e048f8c6ae58c70d64.setContent(html_c106f365eaa185012ac9d3c2252d93ba);
+            
+        
+
+        circle_marker_166a0c1346e0861d1189e27bd3d969e3.bindPopup(popup_461e2246227db0e048f8c6ae58c70d64)
+        ;
+
+        
+    
+    
+            circle_marker_166a0c1346e0861d1189e27bd3d969e3.bindTooltip(
+                `<div>
+                     FIPS ID 6085: 20 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7ecb0263bf80545bba6442d640d4cdd = L.circleMarker(
+                [32.7157, -117.1611],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_961dd1ce9844770df5bb976919596907 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cab3f3f200ce55483f18182fcb89699a = $(`<div id="html_cab3f3f200ce55483f18182fcb89699a" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6073<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>24 Units</span></div></div>`)[0];
+                popup_961dd1ce9844770df5bb976919596907.setContent(html_cab3f3f200ce55483f18182fcb89699a);
+            
+        
+
+        circle_marker_a7ecb0263bf80545bba6442d640d4cdd.bindPopup(popup_961dd1ce9844770df5bb976919596907)
+        ;
+
+        
+    
+    
+            circle_marker_a7ecb0263bf80545bba6442d640d4cdd.bindTooltip(
+                `<div>
+                     FIPS ID 6073: 24 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4fa3115513329b1b9837a4355db62c0c = L.circleMarker(
+                [36.7468, -119.7726],
+                {"bubblingMouseEvents": true, "color": "#9400D3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00FF00", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 3}
+            ).addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+    
+        var popup_5cc3dbc348773af72719039965adf003 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69d3d12bfb0fab4555cbbc16b475fa24 = $(`<div id="html_69d3d12bfb0fab4555cbbc16b475fa24" style="width: 100.0%; height: 100.0%;"><div style='font-family: monospace; min-width: 160px; color: #fff; background-color: #222; padding: 8px; border-radius: 5px;'> <h5 style='margin:0 0 5px 0; color:#00FF00; border-bottom: 1px solid #9400D3; padding-bottom:3px;'>METRIC RECORD</h5><b>COUNTY:</b> Unknown County<br><b>POSTAL PROXY:</b> 6019<br><b>LOAD CAPACITY:</b> <span style='color:#00FF00; font-weight:bold;'>16 Units</span></div></div>`)[0];
+                popup_5cc3dbc348773af72719039965adf003.setContent(html_69d3d12bfb0fab4555cbbc16b475fa24);
+            
+        
+
+        circle_marker_4fa3115513329b1b9837a4355db62c0c.bindPopup(popup_5cc3dbc348773af72719039965adf003)
+        ;
+
+        
+    
+    
+            circle_marker_4fa3115513329b1b9837a4355db62c0c.bindTooltip(
+                `<div>
+                     FIPS ID 6019: 16 Units
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_98991fd3dc9d4b6737202cc76b1adb61.addTo(map_6c0c13082f921c89335f5e19c0002f66);
+        
+</script>
+</html>
